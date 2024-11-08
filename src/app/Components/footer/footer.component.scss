@@ -1,0 +1,16 @@
+.sidebar{
+    display: flex;
+    justify-content:space-around;
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    align-items: center;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+
+}

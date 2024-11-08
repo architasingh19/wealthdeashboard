@@ -1,0 +1,50 @@
+
+.wealth-calendar {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.wealth-calendar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wealth-calendar ul li {
+  margin: 10px 0;
+  color: #555;
+}
+.wealth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.date {
+  width: 64.66px;
+  height: 71.333px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #d3d3d3;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.decription {
+  color: rgba(0, 0, 0, 0.86);
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}

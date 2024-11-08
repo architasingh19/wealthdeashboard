@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+
+  .responsive_header{
+    display: none;
+  }
+  .responsive_sidebar{
+    display: flex;
+  }
+  .responsive_calender{
+    display: block;
+  }
+  .responsive_footer{
+    display: none;
+  }
+  
+
+  @media screen and (max-width: 376px) {
+     .container{
+      display: flex;
+      flex-direction: column;
+      background-color: #fff4e9;
+     }
+     .responsive_header{
+      display: block;
+     }
+     .responsive_calender{
+      display: none;
+     }
+     .responsive_footer{
+      display: block;
+    }
+  }

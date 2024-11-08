@@ -1,0 +1,233 @@
+.wealth-summary {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.investments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 15px;
+  flex: 1 1 calc(50% - 15px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card.disabled {
+  background-color: #e0e0e0;
+  color: #999;
+}
+
+.wealth-summary-img {
+  width: 55%;
+  img {
+    width: 90%;
+    height: 250px;
+  }
+}
+
+.main-content-right {
+  background-image: url(https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/8568a788-8dc9-4af7-b3c9-d64dd41271a7/ceef3b31-1f46-47f3-be48-1e6e883d8563.png);
+  width: 45%;
+  height: 250px;
+  color: white;
+  border-radius: 0.5rem;
+  p {
+    text-align: start;
+    margin-left: 2rem;
+  }
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content-bottom {
+  display: flex;
+  padding: 1.4rem;
+  width: 96%;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 13px 11px #00000005;
+  hr {
+    opacity: 0.2;
+  }
+}
+
+.items {
+  width: 115px;
+  height: 97px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 6px 3px #0000000a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    opacity: 0.3;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+    opacity: 0.4;
+    font-size: 10px;
+  }
+}
+
+.item1 {
+  border: 1px solid #f58024;
+  p {
+    opacity: 0.9 !important;
+    font-weight: 700;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.list {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+  .listnames {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 50px;
+      height: 52px;
+    }
+    h3 {
+      font-family: "Lato";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.8px;
+      opacity: 0.9;
+    }
+  }
+  .lists {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.middlelist {
+  width: 50%;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+  .flag-img {
+    width: 17.5px;
+    height: 20px;
+  }
+}
+
+.bottomlist {
+  width: 21%;
+}
+
+.lists_values {
+  font-weight: 700;
+  font-family: "Lato";
+  font-size: 14px;
+  p {
+    margin-bottom: 1px;
+  }
+}
+
+.list_data {
+  color: #63bf97;
+  font-weight: 400;
+  font-size: 12px;
+}
+.main-content-top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.responsive_header {
+  display: block;
+}
+
+.responsive_wealth{
+  display: none;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 376px) {
+  .main-content-right {
+    display: none;
+  }
+  .main-content-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content-top {
+    display: flex;
+    flex-direction: row;
+  }
+  .bottomlist {
+    width: 100%;
+  }
+
+  .middlelist {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    row-gap: 0.5rem;
+  }
+  .wealth-summary-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .responsive_header {
+    display: none;
+  }
+  .img {
+    float: right;
+    transform: translateY(-40px);
+  }
+
+  .img1{
+    width: 200px;
+    height: 200px;
+  }
+
+  .responsive_wealth{
+    display: block;
+    height: 65px;
+    width:356px;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
